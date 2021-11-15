@@ -70,9 +70,9 @@ namespace Bcrypt
  *	char hash[BCRYPT_HASHSIZE];
  *	int ret;
  *
- *	ret = Bcrypt.gensalt(12, salt);
+ *	ret = Bcrypt::gensalt(12, salt);
  *	assert(ret == 0);
- *	ret = Bcrypt.hashpw("thepassword", salt, hash);
+ *	ret = Bcrypt::hashpw("thepassword", salt, hash);
  *	assert(ret == 0);
  *
  *
@@ -80,7 +80,7 @@ namespace Bcrypt
  *
  *	int ret;
  *
- *      ret = Bcrypt.checkpw("thepassword", "expectedhash");
+ *      ret = Bcrypt::checkpw("thepassword", "expectedhash");
  *      assert(ret != -1);
  *
  *	if (ret == 0) {
